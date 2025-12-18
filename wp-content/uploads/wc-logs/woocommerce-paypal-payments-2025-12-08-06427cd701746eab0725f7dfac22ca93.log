@@ -1,0 +1,47 @@
+2025-12-08T12:47:34+00:00 DEBUG #1809 - [New Request] POST /pizza/wp-json/wc-admin/settings/payments/providers
+2025-12-08T12:47:34+00:00 DEBUG #1809 - Webhook lock acquired for 'register'.
+2025-12-08T12:47:34+00:00 DEBUG #1809 - Webhook operation 'register' started.
+2025-12-08T12:47:35+00:00 DEBUG #1809 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-12-08T12:47:35+00:00 ERROR #1809 - Failed to delete webhooks: [Error] Not Found
+2025-12-08T12:47:35+00:00 INFO #1809 - Webhooks deleted.
+2025-12-08T12:47:37+00:00 DEBUG #1809 - POST https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Request Body: {"url":"https:\/\/localhost\/pizza\/wp-json\/paypal\/v1\/incoming","event_types":[{"name":"CHECKOUT.ORDER.APPROVED"},{"name":"CHECKOUT.ORDER.COMPLETED"},{"name":"CHECKOUT.PAYMENT-APPROVAL.REVERSED"},{"name":"PAYMENT.CAPTURE.REFUNDED"},{"name":"PAYMENT.AUTHORIZATION.VOIDED"},{"name":"PAYMENT.CAPTURE.REVERSED"},{"name":"PAYMENT.ORDER.CANCELLED"},{"name":"PAYMENT.CAPTURE.DENIED"},{"name":"PAYMENT.CAPTURE.COMPLETED"},{"name":"VAULT.PAYMENT-TOKEN.CREATED"},{"name":"VAULT.PAYMENT-TOKEN.DELETED"},{"name":"PAYMENT.CAPTURE.PENDING"},{"name":"PAYMENT.SALE.COMPLETED"},{"name":"PAYMENT.SALE.REFUNDED"},{"name":"BILLING.SUBSCRIPTION.CANCELLED"},{"name":"BILLING.PLAN.PRICING-CHANGE.ACTIVATED"},{"name":"CATALOG.PRODUCT.UPDATED"},{"name":"BILLING.PLAN.UPDATED"}]}
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-12-08T12:47:37+00:00 ERROR #1809 - Failed to subscribe webhooks: [Error] Not Found
+2025-12-08T12:47:37+00:00 DEBUG #1809 - Webhook lock released for 'register'.
+2025-12-08T13:08:51+00:00 DEBUG #3107 - [New Request] GET /pizza/wp-admin/admin.php
+2025-12-08T13:08:51+00:00 DEBUG #3107 - GET https://api.woocommerce.com/integrations/ppc/v1/customer/partners/K8SKZ36LQBWXJ/merchant-integrations/
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-12-08T13:08:51+00:00 WARNING #3107 - [Error] Not Found CONTEXT: {"args":{"method":"GET","headers":{"Authorization":"Bearer token","Content-Type":"application/json"}},"response":{"headers":{},"body":"{"statusCode":404,"error":"Not Found","message":"Not Found"}","response":{"code":404,"message":"Not Found"},"cookies":[],"filename":null,"http_response":{"data":null,"headers":null,"status":null}}}
+2025-12-08T13:08:59+00:00 DEBUG #5209 - [New Request] GET /pizza/wp-json/wc/v3/wc_paypal/webhooks
+2025-12-08T13:08:59+00:00 DEBUG #5209 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
